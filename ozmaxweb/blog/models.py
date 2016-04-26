@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.contrib.auth.models import User
 from django.db import models
 
-from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 
 
 class Author(models.Model):
@@ -27,7 +27,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique=True, max_length=255)
-    content = RichTextField()
+    content = RichTextUploadingField()
     author = models.ForeignKey(Author)
     categories = models.ManyToManyField(Category)
     created_at = models.DateTimeField(auto_now_add=True)
