@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+
+<head>
+	<title>{% block title %}{% endblock %}</title>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/nav.css'%}">
+</head>
+<body>
+	<div class="container">
+		<div class="menu">{% include 'menu.html' %}</div>
+		<div class="main">
+		{% block content %}{% endblock %}
+		</div>
+
+		<div id="sidebar"></div>
+
+		<footer>ozmax tech</footer>
+	</div>
+</body>
+</html>
