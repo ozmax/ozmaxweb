@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+	{% for post in posts %}
+        <div class="post">
+            <div class="post_title">
+                {{post.title}}
+            </div>
+    		<div class="content">
+                {{post.content | safe}}<br/>
+            </div>
+		{{post.author.nickname}}<br/>
+		{% for category in post.categories.all %}
+			<br/>{{ category.name }}
+		{% endfor %}
+        </div>
+
+	{% endfor %}
+{% endblock %}

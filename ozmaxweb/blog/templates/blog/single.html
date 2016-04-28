@@ -1,0 +1,17 @@
+<html>
+<body>
+{{post.title}}
+<br/>
+{{post.content | safe}}
+<br/>
+posted in: 
+{% for category in post.categories.all %}
+    <br/>
+    {{category.name}}
+{% endfor %}
+<br/>
+<br/>
+authored by:
+{{post.author}}
+</body>
+</html>
