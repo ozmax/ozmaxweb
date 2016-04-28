@@ -35,7 +35,9 @@ ROOT_URLCONF = 'ozmaxweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'ozmaxweb/templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,6 +84,10 @@ USE_L10N = True
 USE_TZ = True
 
 MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
-STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
+#STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'ozmaxweb/static')
+]
 
 from local_settings import *
