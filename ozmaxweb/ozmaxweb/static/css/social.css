@@ -1,7 +1,6 @@
 .social{
     width: 250px;
     margin-top: 40px;
-
     float: right;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -28,7 +27,7 @@
     height: 100px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
-    -moz-border-radius: 15px;
+    -moz-border-radius: 20px;
     background: url(http://localhost:8000/static/img/ozmaxtech2.jpg) no-repeat;
     background-size: 100px 100px;
 
