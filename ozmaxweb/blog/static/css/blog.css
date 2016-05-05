@@ -1,0 +1,43 @@
+.blog_sidebar{
+    width: 200px;
+    float: right;
+    margin: 40px auto;
+    background-color: white;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.blog_sidebar a{
+    text-decoration: none;
+}
+
+.all_posts{
+    width: 660px;
+    float: left;
+}
+
+.post {
+    padding: 20px 20px 20px 35px;
+    background-color: white;
+    margin-top: 40px;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.post_title{
+    font-weight: bolder;
+    width: 100%;
+}
+
+.post_title a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.category{
+    padding-top: 10px;
+}

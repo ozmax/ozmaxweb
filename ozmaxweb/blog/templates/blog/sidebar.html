@@ -1,0 +1,12 @@
+<div class="blog_sidebar">
+    <div class="categories">
+        <h5>Categories</h5>
+        {% for category in categories %}
+            <div class="category">
+                <a href="#">
+                    {{category.name}} {{category.post_set.all.count }}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
