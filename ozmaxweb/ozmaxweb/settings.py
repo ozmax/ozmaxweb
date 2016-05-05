@@ -84,10 +84,11 @@ USE_L10N = True
 USE_TZ = True
 
 MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
-#STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
+# STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'ozmaxweb/static')
+    os.path.join(BASE_DIR, 'ozmaxweb/static'),
+    os.path.join(BASE_DIR, 'blog/static')
 ]
 
 from local_settings import *
