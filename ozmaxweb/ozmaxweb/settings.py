@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'ckeditor_uploader',
+    'ozmaxweb',
     'blog',
 ]
 
@@ -76,6 +77,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_IMAGE_BACKEND = 'pillow'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'allowedContent': True,
+        'entities_greek': False,
+    }
+}
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Europe/Athens'
