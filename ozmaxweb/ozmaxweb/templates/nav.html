@@ -1,7 +1,7 @@
+{% load base_tags %}
 <ul class="nav">
-    <li class="active"><a href="#"><i class="fa fa-pencil"></i> Blog</a></li>
-    <li class=""><a href="#" style="color: gray;"><i class="fa fa-apple"></i> OSX</a></li>
-    <li class=""><a href="#" style="color: dodgerblue;"><i class="fa fa-phone"></i> Contact</a></li>
-    <li><a href="#" style="color: green;"><i class="fa fa-info-circle"></i> About</a></li>
+    <li class="{% set_active "blog" request.path %}"><a href="/blog" ><i class="fa fa-pencil"></i> Blog</a></li>
+    <li class="{% set_active "osx" request.path %}"><a href="/osx/" ><i class="fa fa-apple"></i> OSX</a></li>
+    <li class="{% set_active "contact" request.path %}"><a href="/contact/" ><i class="fa fa-phone"></i> Contact</a></li>
+    <li class="{% set_active "about" request.path %}"><a href="#" ><i class="fa fa-info-circle"></i> About</a></li>
 </ul>
-<div class="mock_nav">

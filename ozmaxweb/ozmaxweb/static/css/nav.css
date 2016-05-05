@@ -1,6 +1,5 @@
 .nav{
     border-bottom:2px solid orange;
-    border-top: 1px solid dodgerblue;
     list-style:none;
     margin:0 auto;
     padding:0;
@@ -17,13 +16,10 @@
     display:inline-block;
     padding:10px;
     text-decoration: none;
-    color:  black;
+    color:  grey;
 }
 
 .active a, .active i{
     color: white;
     background-color: orange;
-}
-
-.mock_nav{
 }
