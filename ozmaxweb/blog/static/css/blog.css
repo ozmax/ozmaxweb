@@ -20,7 +20,7 @@
 }
 
 .post {
-    padding: 20px 20px 20px 35px;
+    padding: 25px 35px 25px 35px;
     background-color: white;
     margin-top: 40px;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,6 @@
 }
 
 .post_title{
-    font-weight: bolder;
     width: 100%;
 }
 
@@ -37,7 +36,41 @@
     text-decoration: none;
     color: dodgerblue;
 }
+.title_head{
+    font-weight: bolder;
+    font-size: 23px;
+}
 
-.category{
+.subheader{
+    padding-left: 28px;
+    color: grey;
+    font-size: 12px;
+}
+
+.author, .created_at{
+    font-style: oblique;   
+    font-weight: bolder;
+}
+
+.post_footer{
+    font-size:13px;
+}
+
+.tags{
+    color: grey;
+}
+
+.tag_category{
+    padding: 2px 6px 2px 6px;
+    margin-top 10px;
+    margin-left: 5px;
+    background-color: orange;
+    color: black;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 20px;
+}
+
+.sidebar_category{
     padding-top: 10px;
 }

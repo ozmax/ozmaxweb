@@ -11,18 +11,32 @@
 	   {% for post in posts %}
             <div class="post">
                 <div class="post_title">
-                    <h2><a href="{{post.slug}}"><i class="fa fa-arrow-circle-right"></i> {{post.title}}</a></h2>
-                               <hr>
+                    <a href="{{post.slug}}">
+                    <span class="title_head"><i class="fa fa-arrow-circle-right"></i> {{post.title}}</span>
+                    <br>
+                    <span class="subheader">
+                        <i class="fa fa-level-up fa-rotate-90"></i>
+                        by
+                        <span class="author">{{post.author.nickname}}</span>
+                        at 
+                        <span class="created_at">{{ post.created_at }}</span>
+                        </span>
+                    </a>
+                    <hr>
 
                 </div>
                 <div class="blog_content">
                     {{post.content | safe}}
                 </div>
-                {{post.author.nickname}}<br/>
-
+                <hr>
+                <div class="post_footer">
+                <span class="tags"><i class="fa fa-tags"></i>Tags</span>
                 {% for category in post.categories.all %}
-			         <br/>{{ category.name }}
+                    <span class="tag_category">
+			            {{ category.name }}
+                    </span>
                 {% endfor %}
+                </div>
 
             </div>
 	   {% endfor %}
