@@ -1,6 +1,6 @@
 body{
-    background-color: #F5F4EB;
-
+    background-color: #f2f2f2;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .container{
@@ -8,15 +8,6 @@ body{
     margin: 0 auto;
 }
 
-.main{
-	margin-top: 50px;
-}
-
-.post {
-    background-color: white;
-    margin-top: 20px;
-}
-
-.post_title{
-    font-weight: bolder;
+.clearfix{
+    clear:both;
 }

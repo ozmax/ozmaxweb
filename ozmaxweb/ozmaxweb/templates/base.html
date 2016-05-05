@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
 {% load staticfiles %}
-
 <head>
 	<title>{% block title %}{% endblock %}</title>
-
-	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/nav.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/social.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
+	{% block extra_css %}{% endblock %}
 </head>
 <body>
+		{% include 'nav.html' %}
+
 	<div class="container">
-		<div class="menu">{% include 'menu.html' %}</div>
-		<div class="main">
+		{% include 'social.html' %}
 		{% block content %}{% endblock %}
-		</div>
-
-		<div id="sidebar"></div>
-
-		<footer>ozmax tech</footer>
+		{% include 'footer.html'%}
 	</div>
 </body>
 </html>

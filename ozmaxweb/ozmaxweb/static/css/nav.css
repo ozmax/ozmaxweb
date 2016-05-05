@@ -1,15 +1,16 @@
 .nav{
-    border-bottom:1px solid green;
-    border-width:1px 0;
+    border-bottom:2px solid orange;
+    border-top: 1px solid dodgerblue;
     list-style:none;
     margin:0 auto;
     padding:0;
     text-align:center;
-    width: 960px;
+    width: 100%;
 }
 
 .nav li{
     display:inline;
+    padding-right: 15px;
 }
 
 .nav a{
@@ -17,4 +18,12 @@
     padding:10px;
     text-decoration: none;
     color:  black;
+}
+
+.active a, .active i{
+    color: white;
+    background-color: orange;
+}
+
+.mock_nav{
 }
