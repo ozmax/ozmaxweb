@@ -4,6 +4,8 @@
 {% block title %} Home {% endblock %}
 {% block extra_css %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sidebar.css' %}">
+
 {% endblock %}
 
 {% block content %}
@@ -11,13 +13,13 @@
 	   {% for post in posts %}
             <div class="post">
                 <div class="post_title">
-                    <a href="{{post.slug}}">
-                    <span class="title_head"><i class="fa fa-arrow-circle-right"></i> {{post.title}}</span>
-                    <br>
-                    <span class="subheader">
+                    <a href="{{ post.slug }}">
+                        <span class="title_head"><i class="fa fa-arrow-circle-right"></i> {{ post.title }}</span>
+                        <br>
+                        <span class="subheader">
                         <i class="fa fa-level-up fa-rotate-90"></i>
                         by
-                        <span class="author">{{post.author.nickname}}</span>
+                        <span class="author">{{ post.author.nickname }}</span>
                         at
                         <span class="created_at">{{ post.created_at }}</span>
                         </span>
