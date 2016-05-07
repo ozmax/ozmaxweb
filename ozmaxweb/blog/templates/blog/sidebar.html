@@ -1,12 +1,28 @@
 <div class="blog_sidebar">
     <div class="sidebar_categories">
-        <h5>Categories</h5>
+        <div class="sidebar_categories_title">
+            Tags
+        </div>
         {% for category in categories %}
             <div class="sidebar_category">
                 <a href="#">
-                    {{category.name}} {{category.post_set.all.count }}
+                    <span class="category_title">
+                        {{ category.name }}
+                    </span>
+                    <span class="category_count">
+                        {{ category.post_set.all.count }}
+                    </span>
                 </a>
             </div>
         {% endfor %}
+    </div>
+    <hr width="60%">
+    <div class="sidebar_archive">
+        <div class="sidebar_archive_title">
+            Archive
+        </div>
+        <span class="kati">
+            -
+        </span>
     </div>
 </div>

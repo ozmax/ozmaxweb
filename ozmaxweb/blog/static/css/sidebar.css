@@ -1,0 +1,62 @@
+.blog_sidebar{
+    width: 250px;
+    float: right;
+    margin: 40px auto;
+    background-color: white;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.blog_sidebar a{
+    text-decoration: none;
+}
+
+.sidebar_categories{
+        padding-left: 55px;
+
+}
+.sidebar_categories_title{
+    margin-top: 25px;
+    color: dimgray;
+    font-size: 20px;
+}
+
+.sidebar_category{
+    padding-top: 8px;
+}
+
+.sidebar_category a{
+    color: dodgerblue;
+}
+
+.category_title{
+    vertical-align: middle;
+}
+
+.category_count{
+    font-size: 10px;
+    background-color: orange;
+    width: 25px;
+    height: 15px;
+    padding: 3px 6px 3px 6px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.sidebar_category a:hover{
+    color:orange;
+}
+.sidebar_category a:hover .category_count{
+    background-color: dodgerblue;
+}
+
+.sidebar_archive{
+    margin-top: 15px;
+    padding-left: 55px;
+}
+.sidebar_archive_title{
+    color: dimgray;
+    font-size: 20px;
+}
