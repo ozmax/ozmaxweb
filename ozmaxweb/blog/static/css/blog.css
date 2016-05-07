@@ -48,7 +48,7 @@
 }
 
 .author, .created_at{
-    font-style: oblique;   
+    font-style: oblique;
     font-weight: bolder;
 }
 
@@ -69,6 +69,27 @@
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 20px;
+}
+
+.pagination{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.newer_posts{
+    padding-left: 45px;
+    float: left;
+}
+
+.older_posts{
+    padding-right: 45px;
+    float: right;
+}
+
+.older_posts a, .newer_posts a{
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
 }
 
 .sidebar_category{

@@ -18,7 +18,7 @@
                         <i class="fa fa-level-up fa-rotate-90"></i>
                         by
                         <span class="author">{{post.author.nickname}}</span>
-                        at 
+                        at
                         <span class="created_at">{{ post.created_at }}</span>
                         </span>
                     </a>
@@ -41,17 +41,21 @@
             </div>
 	   {% endfor %}
         <div class="pagination">
-            <span class="step-links">
+            <span class="newer_posts">
                 {% if posts.has_previous %}
-                    <a href="?page={{ posts.previous_page_number }}">previous</a>
-                {% endif %}
-                <span class="current">
-                    Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
-                </span>
-                {% if posts.has_next %}
-                    <a href="?page={{ posts.next_page_number }}">next</a>
+                    <a href="?page={{ posts.previous_page_number }}"><i class="fa fa-angle-double-left"></i> newer posts</a>
+                {% else %}
+                    <a style="pointer-events: none;"> newest</a>
                 {% endif %}
             </span>
+            <span class="older_posts">
+                {% if posts.has_next %}
+                    <a href="?page={{ posts.next_page_number }}">older posts <i class="fa fa-angle-double-right"></i></a>
+                {% else %}
+                    <a style="pointer-events: none;"> oldest</a>
+                {% endif %}
+            </span>
+            <div class="clearfix"></div>
         </div>
     </div>
 {% include 'blog/sidebar.html' %}
