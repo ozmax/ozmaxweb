@@ -20,6 +20,7 @@
     margin-top: 25px;
     color: dimgray;
     font-size: 20px;
+    font-weight: bolder;
 }
 
 .sidebar_category{
@@ -43,13 +44,17 @@
     color: white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
 
 .sidebar_category a:hover{
-    color:orange;
+    color: dimgray;
+    font-weight: bolder;
 }
+
 .sidebar_category a:hover .category_count{
-    background-color: dodgerblue;
+    background-color: dimgray;
+    font-weight: bolder;
 }
 
 .sidebar_archive{
