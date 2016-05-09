@@ -35,7 +35,7 @@
                 <span class="tags"><i class="fa fa-tags"></i>Tags</span>
                 {% for category in post.categories.all %}
                     <span class="tag_category">
-			            {{ category.name }}
+			            <a href="#?={{ category.name }}">{{ category.name }}</a>
                     </span>
                 {% endfor %}
                 </div>

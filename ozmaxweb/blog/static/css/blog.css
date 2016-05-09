@@ -20,6 +20,11 @@
     text-decoration: none;
     color: dodgerblue;
 }
+
+.post_title a:hover .title_head{
+    color: #1b81e5;
+}
+
 .title_head{
     font-weight: bolder;
     font-size: 23px;
@@ -45,14 +50,22 @@
 }
 
 .tag_category{
+}
+
+.tag_category a{
     padding: 2px 6px 2px 6px;
     margin-top 10px;
     margin-left: 5px;
     background-color: orange;
-    color: black;
     border-radius: 4px;
     -webkit-border-radius: 4px;
-    -moz-border-radius: 20px;
+    -moz-border-radius: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.tag_category a:hover{
+    background-color: #ffb732;
 }
 
 .pagination{
