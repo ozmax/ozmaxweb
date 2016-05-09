@@ -9,7 +9,6 @@
 }
 
 .sicons{
-    width: 100%;
 }
 
 .social-list ul{
@@ -18,9 +17,30 @@
 
 .social-list li{
     display: inline;
-    font-size: 14px;
     padding-left: 14px;
 }
+
+.social-list li a{
+    color: dimgray;
+    font-size: 14px;
+}
+
+.social-list li a:hover i.fa-github{
+    color: black;
+}
+
+.social-list li a:hover i.fa-stack-overflow{
+    color: orange;
+}
+
+.social-list li a:hover i.fa-youtube{
+    color: red;
+}
+
+.social-list li a:hover i.fa-facebook-official{
+    color: darkblue;
+}
+
 
 .logo{
     -moz-box-shadow: 0 0 5px #888;
