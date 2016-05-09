@@ -1,7 +1,7 @@
 .blog_sidebar{
-    width: 250px;
+    width: 210px;
     float: right;
-    margin: 40px auto;
+    margin: 20px auto;
     background-color: white;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@
 }
 
 .sidebar_category a{
-    color: dodgerblue;
+    color: gray;
 }
 
 .category_title{
@@ -36,7 +36,7 @@
 
 .category_count{
     font-size: 10px;
-    background-color: orange;
+    background-color: gray;
     width: 25px;
     height: 15px;
     padding: 3px 6px 3px 6px;

@@ -1,41 +1,37 @@
 .social{
-    width: 250px;
+    width: 210px;
     margin-top: 40px;
     float: right;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
+    background-color: white;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .sicons{
-    float:left;
+    width: 100%;
 }
-.social-list{
-    padding-top: 10px;
-    list-style: none;
+
+.social-list ul{
+    list-style-type: none;
 }
 
 .social-list li{
     display: inline;
-    padding-right: 15px;
+    font-size: 16px;
+    padding-left: 8px;
 }
 
 .logo{
-    margin-right: 30px;
-    margin-top: 10px;
-    float:right;
-    width: 100px;
-    height: 100px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    margin: 15px auto;
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     background: url(http://localhost:8000/static/img/ozmaxtech2.jpg) no-repeat;
-    background-size: 100px 100px;
-
-}
-
-.brandname{
-    font-family: 'Devonshire', cursive;
-    font-size: 26px;
-    text-align: center;
-
+    background-size: 150px 150px;
 }
