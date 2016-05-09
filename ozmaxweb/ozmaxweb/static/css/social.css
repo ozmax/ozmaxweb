@@ -32,6 +32,6 @@
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    background: url(http://localhost:8000/static/img/ozmaxtech2.jpg) no-repeat;
+    background: url(/static/img/ozmaxtech2.jpg) no-repeat;
     background-size: 150px 150px;
 }
