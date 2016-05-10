@@ -49,12 +49,10 @@
 
 .sidebar_category a:hover{
     color: dimgray;
-    font-weight: bolder;
 }
 
 .sidebar_category a:hover .category_count{
     background-color: dimgray;
-    font-weight: bolder;
 }
 
 .sidebar_archive{
