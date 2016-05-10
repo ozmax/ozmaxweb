@@ -4,8 +4,8 @@
             Tags
         </div>
         {% for category in categories %}
-            <div class="sidebar_category">
-                <a href="#">
+            <div class="sidebar_category {% if filter_tag == category.name%} active_tag {% endif %}">
+                <a href="{% url 'posts_by_tag' category.name %}">
                     <span class="category_title">
                         {{ category.name }}
                     </span>

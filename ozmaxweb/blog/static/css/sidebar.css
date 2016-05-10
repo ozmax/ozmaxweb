@@ -31,6 +31,13 @@
     color: gray;
 }
 
+.active_tag .category_title{
+    color: dodgerblue;
+}
+.active_tag .category_count{
+    background-color: orange;
+}
+
 .category_title{
     vertical-align: middle;
 }
@@ -53,6 +60,10 @@
 
 .sidebar_category a:hover .category_count{
     background-color: dimgray;
+}
+
+.active_tag a:hover .category_count {
+    background-color: orange;
 }
 
 .sidebar_archive{
