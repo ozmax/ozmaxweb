@@ -1,15 +1,28 @@
+.filter_tag_message{
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter_tag{
+    color: dodgerblue;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
 .all_posts{
     width: 700px;
     float: left;
+    margin-top: 40px;
 }
 
 .post {
     padding: 25px 35px 25px 35px;
     background-color: white;
-    margin-top: 40px;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 }
 
 .post_title{
@@ -92,4 +105,10 @@
     color: dimgray;
 }
 
-
+.no_post_found{
+    height: 300px; 
+    text-align: center; 
+    line-height: 250px;
+    font-size: 20px;
+    color: red;
+}

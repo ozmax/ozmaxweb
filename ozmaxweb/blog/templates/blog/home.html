@@ -10,10 +10,16 @@
 
 {% block content %}
     <div class="all_posts">
+        
+    {% if 'tag' in request.path and posts %}
+        <div class="filter_tag_message">
+           <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> Posts filtered by tag: <span class="filter_tag">{{ filter_tag }}</span>
+        </div>
+    {% endif %}
 	   {% for post in posts %}
             <div class="post">
                 <div class="post_title">
-                    <a href="{{ post.slug }}">
+                    <a href="{% url 'single_post' post.slug %}">
                         <span class="title_head"><i class="fa fa-arrow-circle-right"></i> {{ post.title }}</span>
                     </a>
                         <br>
@@ -35,11 +41,17 @@
                 <span class="tags"><i class="fa fa-tags"></i>Tags</span>
                 {% for category in post.categories.all %}
                     <span class="tag_category">
-			            <a href="#?={{ category.name }}">{{ category.name }}</a>
+			            <a href="{% url 'posts_by_tag'  category.name %}">{{ category.name }}</a>
                     </span>
                 {% endfor %}
                 </div>
 
+            </div>
+        {% empty%}
+            <div class="post">
+                <div class="no_post_found">
+                    <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> No posts found with the tag: <span class="filter_tag">{{ filter_tag }}</span> 
+                </div>
             </div>
 	   {% endfor %}
         <div class="pagination">
