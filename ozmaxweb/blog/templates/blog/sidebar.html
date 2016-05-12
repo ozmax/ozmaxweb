@@ -1,15 +1,15 @@
 <div class="blog_sidebar">
-    <div class="sidebar_categories">
-        <div class="sidebar_categories_title">
+    <div class="sidebar_component">
+        <div class="sidebar_title">
             Tags
         </div>
         {% for category in categories %}
-            <div class="sidebar_category {% if filter_tag == category.name%} active_tag {% endif %}">
+            <div class="sidebar_item {% if filter_tag == category.name%} active_item {% endif %}">
                 <a href="{% url 'posts_by_tag' category.name %}">
-                    <span class="category_title">
+                    <span class="item_title">
                         {{ category.name }}
                     </span>
-                    <span class="category_count">
+                    <span class="item_count">
                         {{ category.post_set.all.count }}
                     </span>
                 </a>
@@ -17,12 +17,22 @@
         {% endfor %}
     </div>
     <hr width="60%">
-    <div class="sidebar_archive">
-        <div class="sidebar_archive_title">
+    <div class="sidebar_component">
+        <div class="sidebar_title">
             Archive
-        </div>
-        <span class="kati">
-            -
-        </span>
+        </div>       
+            {% for annual_part in archive %}
+                <div class="sidebar_subtitle">
+                    {{annual_part.0}}
+                </div>
+                 {% for month_part in annual_part.1 %}
+                    <div class="sidebar_item" style="padding-left: 15px;">
+                        <a href="#">
+                            <span class="item_title">{{ month_part.0 }} </span>
+                            <span class="item_count">{{month_part.1}}</span>
+                        </a>
+                    </div>
+                {% endfor%}
+            {% endfor %}
     </div>
 </div>

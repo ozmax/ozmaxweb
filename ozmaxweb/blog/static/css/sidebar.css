@@ -12,37 +12,46 @@
     text-decoration: none;
 }
 
-.sidebar_categories{
+.sidebar_component{
         padding-left: 55px;
-
+        margin-bottom: 25px;
 }
-.sidebar_categories_title{
+
+.sidebar_title{
     margin-top: 25px;
     color: dimgray;
     font-size: 20px;
     font-weight: bolder;
 }
 
-.sidebar_category{
+.sidebar_subtitle{
+    font-size: 14px;
+    color: slategray;
+    font-weight: bold;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.sidebar_item{
     padding-top: 8px;
 }
 
-.sidebar_category a{
+.sidebar_item a{
     color: gray;
 }
 
-.active_tag .category_title{
+.active_item .item_title{
     color: dodgerblue;
 }
-.active_tag .category_count{
+.active_item .item_count{
     background-color: orange;
 }
 
-.category_title{
+.item_title{
     vertical-align: middle;
 }
 
-.category_count{
+.item_count{
     font-size: 10px;
     background-color: gray;
     width: 25px;
@@ -54,23 +63,14 @@
     -moz-border-radius: 50%;
 }
 
-.sidebar_category a:hover{
+.sidebar_item a:hover{
     color: dimgray;
 }
 
-.sidebar_category a:hover .category_count{
+.sidebar_component a:hover .item_count{
     background-color: dimgray;
 }
 
-.active_tag a:hover .category_count {
+.active_item a:hover .item_count {
     background-color: orange;
-}
-
-.sidebar_archive{
-    margin-top: 15px;
-    padding-left: 55px;
-}
-.sidebar_archive_title{
-    color: dimgray;
-    font-size: 20px;
 }
