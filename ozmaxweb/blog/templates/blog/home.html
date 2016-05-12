@@ -11,9 +11,9 @@
 {% block content %}
     <div class="all_posts">
         
-    {% if 'tag' in request.path and posts %}
-        <div class="filter_tag_message">
-           <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> Posts filtered by tag: <span class="filter_tag">{{ filter_tag }}</span>
+    {% if 'tag' in request.path and posts or 'archive' in request.path and posts %}
+        <div class="filter_term_message">
+           <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> Posts filtered by: <span class="filter_term">{{ filter_term }}</span>
         </div>
     {% endif %}
 	   {% for post in posts %}
@@ -50,7 +50,7 @@
         {% empty%}
             <div class="post">
                 <div class="no_post_found">
-                    <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> No posts found with the tag: <span class="filter_tag">{{ filter_tag }}</span> 
+                    <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> No posts found with filter: <span class="filter_term">{{ filter_term }}</span> 
                 </div>
             </div>
 	   {% endfor %}

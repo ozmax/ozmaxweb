@@ -4,7 +4,7 @@
             Tags
         </div>
         {% for category in categories %}
-            <div class="sidebar_item {% if filter_tag == category.name%} active_item {% endif %}">
+            <div class="sidebar_item {% if filter_term == category.name %} active_item {% endif %}">
                 <a href="{% url 'posts_by_tag' category.name %}">
                     <span class="item_title">
                         {{ category.name }}
@@ -25,10 +25,14 @@
                 <div class="sidebar_subtitle">
                     {{annual_part.0}}
                 </div>
+                
                  {% for month_part in annual_part.1 %}
-                    <div class="sidebar_item" style="padding-left: 15px;">
-                        <a href="#">
-                            <span class="item_title">{{ month_part.0 }} </span>
+                    {% with month_part.0|add:" - "|add:annual_part.0 as month_year %}
+                    <div class="sidebar_item {% if filter_term == month_year %} active_item {% endif %}" style="padding-left: 15px;">
+                    {% endwith %}
+                        <a href="{% url 'posts_by_date' annual_part.0 month_part.0 %}">
+                            <i class="fa fa-level-up fa-rotate-90"></i>
+                            <span class="item_title">{{ month_part.0}} </span>
                             <span class="item_count">{{month_part.1}}</span>
                         </a>
                     </div>
