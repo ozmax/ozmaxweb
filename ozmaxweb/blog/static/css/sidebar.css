@@ -19,17 +19,17 @@
 
 .sidebar_title{
     margin-top: 25px;
-    color: dimgray;
+    color: steelBlue  ;
     font-size: 20px;
     font-weight: bolder;
 }
 
 .sidebar_subtitle{
     font-size: 14px;
-    color: slategray;
+    color: dimgray;
     font-weight: bold;
-    margin-top: 10px;
-    text-decoration: underline;
+    margin-top: 15px;
+    font-style : oblique;
 }
 
 .sidebar_item{

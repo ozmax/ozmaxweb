@@ -1,7 +1,7 @@
 <div class="blog_sidebar">
     <div class="sidebar_component">
         <div class="sidebar_title">
-            Tags
+            Tags <i class="fa fa-tag"></i>
         </div>
         {% for category in categories %}
             <div class="sidebar_item {% if filter_term == category.name %} active_item {% endif %}">
@@ -19,7 +19,7 @@
     <hr width="60%">
     <div class="sidebar_component">
         <div class="sidebar_title">
-            Archive
+            Archive <i class="fa fa-calendar"></i>
         </div>       
             {% for annual_part in archive %}
                 <div class="sidebar_subtitle">
@@ -32,7 +32,7 @@
                     {% endwith %}
                         <a href="{% url 'posts_by_date' annual_part.0 month_part.0 %}">
                             <i class="fa fa-level-up fa-rotate-90"></i>
-                            <span class="item_title">{{ month_part.0}} </span>
+                            <span class="item_title"> {{ month_part.0}}</span>
                             <span class="item_count">{{month_part.1}}</span>
                         </a>
                     </div>

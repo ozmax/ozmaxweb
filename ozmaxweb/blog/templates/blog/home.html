@@ -38,7 +38,7 @@
                 </div>
                 <hr>
                 <div class="post_footer">
-                <span class="tags"><i class="fa fa-tags"></i>Tags</span>
+                <span class="tags"><i class="fa fa-tag"></i> Tags</span>
                 {% for category in post.categories.all %}
                     <span class="tag_category">
 			            <a href="{% url 'posts_by_tag'  category.name %}">{{ category.name }}</a>
