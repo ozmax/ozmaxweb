@@ -1,0 +1,29 @@
+<div class="post">
+    <div class="post_title">
+        <a href="{% url 'single_post' post.slug %}">
+            <span class="title_head"><i class="fa fa-arrow-circle-right"></i> {{ post.title }}</span>
+        </a>
+        <br>
+        <span class="subheader">
+            <i class="fa fa-level-up fa-rotate-90"></i> by <span class="author">{{ post.author.nickname }}</span> at
+            <span class="created_at">{{ post.created_at }}</span>
+        </span>
+        <hr>
+
+    </div>
+    <div class="blog_content">
+        {{post.content | safe}}
+    </div>
+    <hr>
+    <div class="post_footer">
+        <span class="tags"><i class="fa fa-tag"></i> Tags</span>
+
+        {% for category in post.categories.all %}
+        <span class="tag_category">
+            <a href="{% url 'posts_by_tag'  category.name %}">{{ category.name }}</a>
+        </span>
+        {% endfor %}
+
+    </div>
+
+</div>

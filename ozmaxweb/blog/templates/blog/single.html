@@ -1,17 +1,14 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sidebar.css' %}">
+{% endblock %}
 
 {% block content %}
-    {{post.title}}
-    <br/>
-    {{post.content | safe}}
-    <br/>
-    posted in:
-    {% for category in post.categories.all %}
-        <br/>
-        {{category.name}}
-    {% endfor %}
-    <br/>
-    <br/>
-    authored by:
-    {{post.author}}
+    <div class="all_posts">
+        {% include 'blog/post.html' %}
+    </div>
+    {% include 'blog/social.html' %}
+    {% include 'blog/sidebar.html' %}
 {% endblock%}
