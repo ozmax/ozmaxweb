@@ -4,6 +4,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Post, Category
 from .blog_utils import filter_posts, get_archive
 
+
 def home(request, tag=None, year=None, month=None):
     posts = Post.objects.all()
     archive = get_archive(posts)
@@ -17,7 +18,8 @@ def home(request, tag=None, year=None, month=None):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
     categories = Category.objects.all()
-    context = {'filter_term': filter_term, 'posts': posts, 'categories': categories, 'archive': archive}
+    context = {'filter_term': filter_term, 'posts': posts,
+               'categories': categories, 'archive': archive}
     tmpl = 'blog/home.html'
     return render(request, tmpl, context)
 
