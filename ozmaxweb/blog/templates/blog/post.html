@@ -13,6 +13,11 @@
     </div>
     <div class="blog_content">
         {{post.content | safe}}
+        {% if post.has_more %}
+            <div class="post_more">
+                <a href="{% url 'single_post' post.slug %}"><i class="fa fa-chevron-left"></i> More <i class="fa fa-chevron-right"></i></a>
+            </div>
+        {% endif %}
     </div>
     <hr>
     <div class="post_footer">

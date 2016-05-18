@@ -63,3 +63,13 @@
 .tag_category a:hover{
     background-color: #ffb732;
 }
+
+.post_more{
+    text-align: center;
+}
+
+.post_more a{
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 18px;
+}
