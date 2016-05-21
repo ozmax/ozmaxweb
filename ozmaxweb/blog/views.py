@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import Post, Category
-from .blog_utils import filter_posts, get_archive, cut_more, clean_more
+from .blog_utils import filter_posts, get_archive, cut_more
 
 
 def home(request, tag=None, year=None, month=None):
@@ -29,7 +29,6 @@ def home(request, tag=None, year=None, month=None):
 def single_post(request, slug):
     post = get_object_or_404(Post, slug=slug)
     post = Post.objects.get(slug=slug)
-    post = clean_more(post)
     categories = Category.objects.all()
     context = {'post': post, 'categories': categories}
     tmpl = 'blog/single.html'

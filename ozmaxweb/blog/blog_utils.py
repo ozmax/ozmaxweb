@@ -51,14 +51,7 @@ def filter_posts(posts, tag=None, year=None, month=None):
 
 def cut_more(posts):
     for post in posts:
-        if "&lt;!-- more --&gt;" in post.content:
-            post.content = post.content.split("&lt;!-- more --&gt;")[0]
+        if "<!-- more -->" in post.content:
+            post.content = post.content.split("<!-- more -->")[0]
             post.has_more = True
     return posts
-
-
-def clean_more(post):
-    if "&lt;!-- more --&gt;" in post.content:
-        post.content = ''.join(part for part in
-                               post.content.split("&lt;!-- more --&gt;"))
-    return post

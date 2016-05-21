@@ -65,11 +65,11 @@
 }
 
 .post_more{
-    text-align: center;
+    text-align: right;
 }
 
 .post_more a{
-    color: dodgerblue;
+    color: gray;
     text-decoration: none;
     font-size: 18px;
 }
