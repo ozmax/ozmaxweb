@@ -27,9 +27,10 @@ def home(request, tag=None, year=None, month=None):
 
 
 def single_post(request, slug):
-    post = get_object_or_404(Post, slug=slug)
-    post = Post.objects.get(slug=slug)
+    posts = Post.objects.all()
+    archive = get_archive(posts)
+    post = get_object_or_404(posts, slug=slug)
     categories = Category.objects.all()
-    context = {'post': post, 'categories': categories}
+    context = {'post': post, 'categories': categories, 'archive': archive}
     tmpl = 'blog/single.html'
     return render(request, tmpl, context)
