@@ -73,3 +73,7 @@
     text-decoration: none;
     font-size: 18px;
 }
+
+.post_more a:hover{
+    color: dimgray;
+}
