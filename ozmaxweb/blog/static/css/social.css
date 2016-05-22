@@ -1,4 +1,5 @@
 .social{
+    background-image: url(/static/img/halftone.png);
     width: 220px;
     margin-top: 40px;
     float: right;
@@ -44,7 +45,7 @@
 
 .logo{
     -moz-box-shadow: 0 0 5px #888;
-    -webkit-box-shadow: 0 0 5px#888;
+    -webkit-box-shadow: 0 0 5px #888;
     box-shadow: 0 0 5px #888;
     margin: 15px auto;
     width: 170px;
@@ -52,6 +53,6 @@
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    background: url(/static/img/ozmaxtech2.jpg) no-repeat;
+    background: url(/static/img/ozmaxtech.jpg) no-repeat;
     background-size: 170px 170px;
 }
