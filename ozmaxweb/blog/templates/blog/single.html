@@ -7,6 +7,11 @@
 
 {% block content %}
     <div class="all_posts">
+            {% if request.path not in request.META.HTTP_REFERER %}
+                <div class="back_home">
+                    <a href="{{ request.META.HTTP_REFERER }}"><i class="fa fa-caret-left"></i> Go back</a>
+                </div>
+            {% endif %}
         {% include 'blog/post.html' %}
     </div>
     {% include 'blog/social.html' %}

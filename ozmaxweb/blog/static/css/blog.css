@@ -112,3 +112,16 @@
     font-size: 20px;
     color: red;
 }
+
+.back_home{
+    margin-bottom: 10px;
+}
+
+.back_home a{
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+}
+
+.back_home a:hover{
+    color: dimgray;}
