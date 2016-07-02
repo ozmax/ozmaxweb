@@ -1,0 +1,17 @@
+- name: ensure apt packages are installed
+  apt: pkg={{ item }} state=present
+  with_items:
+  - python2.7
+  - python-pip
+  - python-virtualenv
+
+  - build-essential
+  - python2.7-dev
+  - libpq-dev
+  - libjpeg-dev
+
+  - git
+  - imagemagick
+  - gettext
+
+- name: ensure
