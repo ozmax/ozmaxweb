@@ -26,7 +26,7 @@
   git: >
       dest={{ path }}
       repo={{ repo }}
-      version=master
+      version=deploy_with_ansible
       accept_hostkey=true
   notify:
     - restart wsgi
@@ -42,13 +42,13 @@
   sudo_user: '{{ unix_user }}'
   copy: >
       src=../../{{ project_name }}/sample_local_settings.py
-      dest={{ path }}/{{ project_name }}/{{ project_name }}/local_settings.py
+      dest={{ path }}/{{ project_name }}/local_settings.py
       mode=0600
       force=false
 
 - name: ensure models are migrated
   sudo_user: '{{ unix_user }}'
   django_manage: >
-      app_path={{ path }}/{{ project_name }}
+      app_path={{ path }}
       virtualenv={{ virtualenv }}
       command=migrate
