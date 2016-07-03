@@ -1,0 +1,54 @@
+- name: ensure apt packages are installed
+  apt: name={{ item }} state=present
+  with_items:
+    - python2.7
+    - python-pip
+    - python-virtualenv
+
+    - build-essential
+    - python2.7-dev
+    - libpq-dev
+    - libjpeg-dev
+    - libncurses5-dev
+
+    - git
+    - imagemagick
+    - gettext
+
+- name: ensure deployment directory exists
+  file: >
+      state=directory
+      path={{ path }}
+      owner='{{ unix_user }}' group='{{ unix_user }}'
+
+- name: ensure repository's HEAD points at the correct version
+  sudo_user: '{{ unix_user }}'
+  git: >
+      dest={{ path }}
+      repo={{ repo }}
+      version=master
+      accept_hostkey=true
+  notify:
+    - restart wsgi
+    - restart celeryd
+
+- name: ensure project python modules are installed
+  sudo_user: '{{ unix_user }}'
+  pip: >
+      requirements={{ path }}/requirements.txt
+      virtualenv={{ virtualenv }}
+
+- name: ensure local_settings exists
+  sudo_user: '{{ unix_user }}'
+  copy: >
+      src=../../{{ project_name }}/sample_local_settings.py
+      dest={{ path }}/{{ project_name }}/{{ project_name }}/local_settings.py
+      mode=0600
+      force=false
+
+- name: ensure models are migrated
+  sudo_user: '{{ unix_user }}'
+  django_manage: >
+      app_path={{ path }}/{{ project_name }}
+      virtualenv={{ virtualenv }}
+      command=migrate

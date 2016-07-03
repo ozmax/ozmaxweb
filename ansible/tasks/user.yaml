@@ -1,0 +1,7 @@
+- name: ensure user exists
+  user: >
+      name={{ unix_user }}
+      state=present
+      shell=/bin/bash
+      generate_ssh_key=true
+      ssh_key_comment={{ unix_user }}@{{ ansible_fqdn }}

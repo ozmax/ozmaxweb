@@ -1,0 +1,8 @@
+---
+-    hosts: servers
+     sudo: true
+     tasks:
+     -    include: ../tasks/update_apt.yaml
+     -    include: ../tasks/user.yaml
+     -    include: ../tasks/postgres.yaml
+     -    include: ../tasks/project.yaml

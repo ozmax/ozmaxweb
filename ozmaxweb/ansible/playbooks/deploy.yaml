@@ -1,6 +1,0 @@
----
--    hosts: servers
-     sudo: true
-     tasks:
-     -    include: ../tasks/postgres.yaml
-     -    include: ../tasks.project.yaml

@@ -1,0 +1,254 @@
+[
+{
+    "model": "insp.wpterms",
+    "pk": 1,
+    "fields": {
+        "name": "Uncategorized",
+        "slug": "uncategorized",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 2,
+    "fields": {
+        "name": "Almost philosophy",
+        "slug": "almost-philosophy",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 3,
+    "fields": {
+        "name": "almost...",
+        "slug": "almost",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 4,
+    "fields": {
+        "name": "Art is the Way",
+        "slug": "art-is-the-way",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 5,
+    "fields": {
+        "name": "For teh lulz",
+        "slug": "for_teh_lulz",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 6,
+    "fields": {
+        "name": "Fun Facts",
+        "slug": "fun-facts",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 7,
+    "fields": {
+        "name": "Lainoux",
+        "slug": "lainoux",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 8,
+    "fields": {
+        "name": "muzik",
+        "slug": "muzik",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 9,
+    "fields": {
+        "name": "Oh My God!",
+        "slug": "oh-my-god",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 10,
+    "fields": {
+        "name": "Quote Bucket",
+        "slug": "quote-backet",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 11,
+    "fields": {
+        "name": "Random",
+        "slug": "random",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 12,
+    "fields": {
+        "name": "Revolution",
+        "slug": "revolution",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 13,
+    "fields": {
+        "name": "Science Bitch!",
+        "slug": "science-bitch",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 14,
+    "fields": {
+        "name": "\u0397 \u03c6\u03ac\u03c3\u03b7 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c4\u03c1\u03cd\u03c0\u03b9\u03b1",
+        "slug": "%ce%b7-%cf%86%ce%ac%cf%83%ce%b7-%ce%b5%ce%af%ce%bd%ce%b1%ce%b9-%cf%84%cf%81%cf%8d%cf%80%ce%b9%ce%b1",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 15,
+    "fields": {
+        "name": "\u039a\u03c1\u03b1\u03c7\u03c4\u03ae\u03c1\u03b9",
+        "slug": "%ce%ba%cf%81%ce%b1%cf%87%cf%84%ce%ae%cf%81%ce%b9",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 16,
+    "fields": {
+        "name": "\u039c\u03b5 \u03c4\u03b1 \u03bc\u03ac\u03c4\u03b9\u03b1 \u03c4\u03bf\u03c5 OzmaX",
+        "slug": "%ce%bc%ce%b5-%cf%84%ce%b1-%ce%bc%ce%ac%cf%84%ce%b9%ce%b1-%cf%84%ce%bf%cf%85-ozmax",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 17,
+    "fields": {
+        "name": "\u03a0\u03b5\u03c1\u03af \u039c\u03ae\u03bb\u03bf\u03c5 \u03bf \u03bb\u03cc\u03b3\u03bf\u03c2",
+        "slug": "%cf%80%ce%b5%cf%81%ce%af-%ce%bc%ce%ae%ce%bb%ce%bf%cf%85-%ce%bf-%ce%bb%cf%8c%ce%b3%ce%bf%cf%82",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 18,
+    "fields": {
+        "name": "\u03a3\u03b1\u03c0\u03af\u03bb\u03b5\u03c2",
+        "slug": "%cf%83%ce%b1%cf%80%ce%af%ce%bb%ce%b5%cf%82",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 19,
+    "fields": {
+        "name": "post-format-aside",
+        "slug": "post-format-aside",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 20,
+    "fields": {
+        "name": "Soundtracks",
+        "slug": "soundtracks",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 21,
+    "fields": {
+        "name": "Python",
+        "slug": "python",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 22,
+    "fields": {
+        "name": "Manga Design",
+        "slug": "manga-design",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 23,
+    "fields": {
+        "name": "Coding",
+        "slug": "coding",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 24,
+    "fields": {
+        "name": "youtube comments",
+        "slug": "youtube-comments",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 25,
+    "fields": {
+        "name": "\u0386\u03c4\u03c4\u03b1",
+        "slug": "%ce%ac%cf%84%cf%84%ce%b1",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 26,
+    "fields": {
+        "name": "Nostalgia",
+        "slug": "nostalgia",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 27,
+    "fields": {
+        "name": "Games",
+        "slug": "games",
+        "term_group": 0
+    }
+},
+{
+    "model": "insp.wpterms",
+    "pk": 28,
+    "fields": {
+        "name": "Random Draw",
+        "slug": "random-draw",
+        "term_group": 0
+    }
+}
+]
