@@ -26,7 +26,7 @@
   git: >
       dest={{ path }}
       repo={{ repo }}
-      version=deploy_with_ansible
+      version=master
       accept_hostkey=true
   notify:
     - restart wsgi
@@ -45,6 +45,14 @@
       dest={{ path }}/{{ project_name }}/local_settings.py
       mode=0600
       force=false
+
+- name: add secret_key to local_settings
+  sudo_user: '{{ unix_user }}'
+  replace: >
+      dest={{ path }}/{{ project_name }}/local_settings.py
+      regexp='^(SECRET_KEY\s=\s\')(\')$'
+      replace='\1{{ secret_key }}\2'
+
 
 - name: ensure models are migrated
   sudo_user: '{{ unix_user }}'
