@@ -1,6 +1,6 @@
 SECRET_KEY = ''
 
-DEBUG = True
+DEBUG = False
 
-MEDIA_URL = 'http://localhost:8081/media/'
+MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
