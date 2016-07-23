@@ -1,0 +1,12 @@
+-   name: ensure all services are running and enabled
+    service: >
+        name={{ item.name }}
+        state=started
+        enabled=true
+        arguments={{ item.arguments|default(omit) }}
+    with_items:
+    -   name: postgresql
+    -   name: nginx
+    -   name: uwsgi
+        arguments: '{{ uwsgi_app }}'
+

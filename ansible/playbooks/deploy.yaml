@@ -8,4 +8,4 @@
      -    include: ../tasks/project.yaml
      -    include: ../tasks/nginx.yaml
      -    include: ../tasks/uwsgi.yaml
-
+     -    include: ../tasks/services.yaml
