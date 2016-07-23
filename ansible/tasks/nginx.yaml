@@ -19,3 +19,5 @@
         src=/etc/nginx/sites-available/{{ nginx_conf }}
         path=/etc/nginx/sites-enabled/{{ nginx_conf }}
         state=link
+    notify:
+    -   reload nginx

@@ -59,3 +59,10 @@
       app_path={{ path }}
       virtualenv={{ virtualenv }}
       command=migrate
+
+-   name: ensure static files are collected
+    sudo_user: '{{ unix_user }}'
+    django_manage: >
+        app_path={{ path }}
+        virtualenv={{ virtualenv }}
+        command=collectstatic
