@@ -9,3 +9,6 @@
      -    include: ../tasks/nginx.yaml
      -    include: ../tasks/uwsgi.yaml
      -    include: ../tasks/services.yaml
+
+     handlers:
+     -   include: ../handlers.yaml
