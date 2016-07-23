@@ -5,7 +5,7 @@ PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
 
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -91,7 +91,7 @@ USE_L10N = True
 USE_TZ = True
 
 MEDIA_ROOT = os.path.join(PUBLIC_DIR, 'media')
-# STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
+STATIC_ROOT = os.path.join(PUBLIC_DIR, 'static')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'ozmaxweb/static'),
