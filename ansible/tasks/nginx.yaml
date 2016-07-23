@@ -1,0 +1,21 @@
+-   name: ensure nginx is installed
+    apt: name=nginx state=present
+
+-   name: ensure nginx log directory exists
+    file: >
+        state=directory
+        path=/var/log/nginx/{{ project_name }}
+        owner=www-data group=adm mode=g+s
+
+-   name: ensure nginx configuration is deployed in sites-available
+    template: >
+        dest=/etc/nginx/sites-available/{{ nginx_conf }}
+        src=../templates/nginx.conf
+    notify:
+    -   reload nginx
+
+-   name: ensure nginx configuration is symlinked to sites-enabled
+    file: >
+        src=/etc/nginx/sites-available/{{ nginx_conf }}
+        path=/etc/nginx/sites-enabled/{{ nginx_conf }}
+        state=link

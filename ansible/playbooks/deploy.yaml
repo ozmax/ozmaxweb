@@ -6,3 +6,6 @@
      -    include: ../tasks/user.yaml
      -    include: ../tasks/postgres.yaml
      -    include: ../tasks/project.yaml
+     -    include: ../tasks/nginx.yaml
+     -    include: ../tasks/uwsgi.yaml
+

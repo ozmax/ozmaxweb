@@ -53,7 +53,6 @@
       regexp='^(SECRET_KEY\s=\s\')(\')$'
       replace='\1{{ secret_key }}\2'
 
-
 - name: ensure models are migrated
   sudo_user: '{{ unix_user }}'
   django_manage: >
