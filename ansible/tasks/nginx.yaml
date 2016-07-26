@@ -12,12 +12,15 @@
         dest=/etc/nginx/sites-available/{{ nginx_conf }}
         src=../templates/nginx.conf
     notify:
-    -   reload nginx
+    - reload nginx
 
 -   name: ensure nginx configuration is symlinked to sites-enabled
     file: >
         src=/etc/nginx/sites-available/{{ nginx_conf }}
         path=/etc/nginx/sites-enabled/{{ nginx_conf }}
         state=link
-    notify:
-    -   reload nginx
+
+-   name: restart nginx
+    service: >
+        name=nginx
+        state=reloaded
