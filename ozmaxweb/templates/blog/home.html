@@ -2,11 +2,6 @@
 {% load staticfiles %}
 
 {% block title %} Home {% endblock %}
-{% block extra_css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/post.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/sidebar.css' %}">
-{% endblock %}
 
 {% block content %}
 <div class="all_posts">
@@ -22,9 +17,7 @@
  {% empty%}
  <div class="post">
     <div class="no_post_found">
-        <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> No posts found with filter: <span class="filter_term">{{ filter_term }}</span>
-    </div>
-</div>
+        <a href="{% url 'home' %}"><i style="color:red;" class="fa fa-times-circle"></i></a> N
 {% endfor %}
 
 <div class="pagination">
@@ -37,7 +30,7 @@
     </span>
     <span class="older_posts">
         {% if posts.has_next %}
-        <a href="?page={{ posts.next_page_number }}">older posts <i class="fa fa-angle-double-right"></i></a>
+        <a href="?spage={{ posts.next_page_number }}">older posts <i class="fa fa-angle-double-right"></i></a>
         {% else %}
         <a style="pointer-events: none;"> oldest</a>
         {% endif %}
